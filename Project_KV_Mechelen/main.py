@@ -70,6 +70,11 @@ def read_speler(speler_id: int, db: Session = Depends(get_db)):
     return db_speler
 
 
+# @kvMechelenApp.delete("/speler/{speler_id}")
+# def delete_player(player_id: int, db: _orm.Session = _fastapi.Depends(_services.get_db)):
+#     _services.delete_player(db=db, player_id=player_id)
+#     return {"message": f"successfully deleted player with id: {player_id}"}
+
 # @kvMechelenApp.get("/speler/{speler_nummer}/", response_model=schemas.Speler)
 # def read_speler_2(speler_nummer: int, db: Session = Depends(get_db)):
 #     db_speler_2 = crud.get_speler_by_nummer(db, speler_nummer=speler_nummer)
