@@ -15,30 +15,6 @@ models.Base.metadata.create_all(bind=engine)
 
 kvMechelenApp = FastAPI()
 
-# class Speler(BaseModel):
-#     naam: str
-#     voornaam: str
-#     nummer: int
-#     description: str | None = Field(
-#         default=None, title="The description of the item", max_length=300
-#     )
-#     price: float = Field(gt=0, description="The price must be greater than zero")
-#     tags: list[str] = []
-#
-# @kvMechelenApp.post("/items/", response_model=Speler)
-# async def create_item(speler: Speler):
-#     return speler
-#
-# @kvMechelenApp.get("/spelers/{player_number}")
-# async def read_item(player_number: int):
-#     return {"player_number": player_number}
-#
-# @kvMechelenApp.get("/spelers/{player_name}")
-# async def read_item():
-#     return {"player_name": player_name}
-
-
-
 # Dependency
 def get_db():
     db = SessionLocal()
@@ -70,10 +46,10 @@ def read_speler(speler_id: int, db: Session = Depends(get_db)):
     return db_speler
 
 
-# @kvMechelenApp.delete("/speler/{speler_id}")
-# def delete_player(player_id: int, db: _orm.Session = _fastapi.Depends(_services.get_db)):
-#     _services.delete_player(db=db, player_id=player_id)
-#     return {"message": f"successfully deleted player with id: {player_id}"}
+@kvMechelenApp.delete("/speler/{speler_id}")
+def delete_speler(speler_id: int, db: Session = Depends(get_db)):
+    crud.delete_speler(db, speler_id=speler_id)
+    return {"Speler is succesvol verwijderd."}
 
 # @kvMechelenApp.get("/speler/{speler_nummer}/", response_model=schemas.Speler)
 # def read_speler_2(speler_nummer: int, db: Session = Depends(get_db)):
