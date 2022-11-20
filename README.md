@@ -11,7 +11,7 @@ Ik ben er jammer genoeg niet in geslaagd om een volledig werkende front-end te m
 * GitHub repository voor de API: https://github.com/jentelliekens/API_Project 
 * Github repository voor de front-end: https://github.com/jentelliekens/API_Front 
 * Hosted API link: https://randomizer-service-jentelliekens.cloud.okteto.net
-* Hosted front-end link: /
+* Hosted front-end link: https://jentelliekens.sinners.be/ 
 
     - Python 3+ / FastApi / Uvicorn / aiohttp
     - Postgres / SqlAlchemy(ORM) / Alembic(Migrations) / psycopg2(db Driver)
