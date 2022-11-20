@@ -18,7 +18,7 @@ Ik ben er jammer genoeg niet in geslaagd om een volledig werkende front-end te m
 
 ## Screenshots OpenAPI docs
 * Overzicht van alle opties ![OpenAPI_overzicht.PNG](Afbeeldingen/OpenAPI_overzicht.PNG)
-* Het toevoegen van een speler aan de database ![POST.PNG](Afbeeldingen/POST.PNG)
+* Het toevoegen van een speler aan de database ![Post.PNG](Afbeeldingen/Post.PNG)
 * Het weergeven van alle spelers uit de database ![GET_Spelers.PNG](Afbeeldingen/GET_Spelers.PNG)
 * Het weergeven van één speler uit de database op basis van zijn ID ![GET_Speler.PNG](Afbeeldingen/GET_Speler.PNG)
 * Het verwijderen van één speler uit de database op basis van zijn ID ![Delete.PNG](Afbeeldingen/Delete.PNG) ![Delete_Bewijs.PNG](Afbeeldingen/Delete_Bewijs.PNG) ![Delete_Bewijs2.PNG](Afbeeldingen/Delete_Bewijs2.PNG)
