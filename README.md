@@ -9,15 +9,21 @@ Ik ben er jammer genoeg niet in geslaagd om een volledig werkende front-end te m
 
 ## Informatie
 * GitHub repository voor de API: https://github.com/jentelliekens/API_Project 
-* Github repository voor de front-end: 
+* Github repository voor de front-end: https://github.com/jentelliekens/API_Front 
 * Hosted API link: https://randomizer-service-jentelliekens.cloud.okteto.net
 * Hosted front-end link: /
 
     - Python 3+ / FastApi / Uvicorn / aiohttp
     - Postgres / SqlAlchemy(ORM) / Alembic(Migrations) / psycopg2(db Driver)
 
-## Screenshots Postman
-* d
-
 ## Screenshots OpenAPI docs
-* 
+* Overzicht van alle opties ![OpenAPI_overzicht.PNG](Afbeeldingen/OpenAPI_overzicht.PNG)
+* Het toevoegen van een speler aan de database ![POST.PNG](Afbeeldingen/POST.PNG)
+* Het weergeven van alle spelers uit de database ![GET_Spelers.PNG](Afbeeldingen/GET_Spelers.PNG)
+* Het weergeven van één speler uit de database op basis van zijn ID ![GET_Speler.PNG](Afbeeldingen/GET_Speler.PNG)
+* Het verwijderen van één speler uit de database op basis van zijn ID ![Delete.PNG](Afbeeldingen/Delete.PNG) ![Delete_Bewijs.PNG](Afbeeldingen/Delete_Bewijs.PNG) ![Delete_Bewijs2.PNG](Afbeeldingen/Delete_Bewijs2.PNG)
+
+## Screenshots Postman
+* Opvragen van alle spelers via Postman ![Postman_Spelers.PNG](Afbeeldingen/Postman_Spelers.PNG)
+* Opvragen van een individule speler via Postman ![Postman_Speler.PNG](Afbeeldingen/Postman_Speler.PNG)
+* Toevoegen van een speler via Postman ![Postman_Post.PNG](Afbeeldingen/Postman_Post.PNG)
